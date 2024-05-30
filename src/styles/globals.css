@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #202020;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* UNIVERSAL */
+
+/* Colors Primárias */
+:root {
+  /* Base  */
+  --primary-colors-base-white: #FFFFFF;
+  --primary-colors-base-dark: #000000;
+  --primary-colors-base-transparent: #FFFFFF00;
+
+  /* Gray */
+  --primary-colors-gray-100: #F2F4F7;
+  --primary-colors-gray-200: #ECEFF3;
+  --primary-colors-gray-300: #E4E8EF;
+  --primary-colors-gray-400: #D1D5DC;
+  --primary-colors-gray-500: #BAC0CA;
+  --primary-colors-gray-600: #A4A7AC;
+  --primary-colors-gray-700: #81858A;
+  --primary-colors-gray-800: #4F4C4D;
+  --primary-colors-gray-900: #3B3C3E;
+
+  /* Colors Brand Primary  */
+  --primary-colors-brand-primary-100: #F1E8FF;
+  --primary-colors-brand-primary-200: #E2D2FB;
+  --primary-colors-brand-primary-300: #C09FFD;
+  --primary-colors-brand-primary-400: #B48CF5;
+  --primary-colors-brand-primary-500: #A16FF2;
+  --primary-colors-brand-primary-600: #9365DC;
+  --primary-colors-brand-primary-700: #6E519B;
+  --primary-colors-brand-primary-800: #574475;
+  --primary-colors-brand-primary-900: #442F66;
+
+  /* Colors Brand Secondary  */
+  --primary-colors-brand-secondary-100: #C4F8E7;
+  --primary-colors-brand-secondary-200: #A7F5DC;
+  --primary-colors-brand-secondary-300: #7FF0CB;
+  --primary-colors-brand-secondary-400: #66EDC1;
+  --primary-colors-brand-secondary-500: #40E9B2;
+  --primary-colors-brand-secondary-600: #3AD4A2;
+  --primary-colors-brand-secondary-700: #2DA57E;
+  --primary-colors-brand-secondary-800: #238062;
+  --primary-colors-brand-secondary-900: #1B624B;
+}
+
+/* Colors Secundárias */
+:root {
+  /* Colors Yellow */
+  --secondary-colors-yellow-100: #FEFCD5;
+  --secondary-colors-yellow-200: #FDF9AB;
+  --secondary-colors-yellow-300: #FBF381;
+  --secondary-colors-yellow-400: #F8ED61;
+  --secondary-colors-yellow-500: #F4E42E;
+  --secondary-colors-yellow-600: #D1C221;
+  --secondary-colors-yellow-700: #AFA017;
+  --secondary-colors-yellow-800: #8D800E;
+  --secondary-colors-yellow-900: #756808;
+
+  /* Colors Yellow Orange */
+  --secondary-colors-yellow-orange-100: #FEF9CC;
+  --secondary-colors-yellow-orange-200: #FEF199;
+  --secondary-colors-yellow-orange-300: #FDE766;
+  --secondary-colors-yellow-orange-400: #FCDD40;
+  --secondary-colors-yellow-orange-500: #FBCD02;
+  --secondary-colors-yellow-orange-600: #D7AC01;
+  --secondary-colors-yellow-orange-700: #B48C01;
+  --secondary-colors-yellow-orange-800: #916E00;
+  --secondary-colors-yellow-orange-900: #785900;
+
+  /* Colors Orange */
+  --secondary-colors-orange-100: #FCDCB3;
+  --secondary-colors-orange-200: #FACB8E;
+  --secondary-colors-orange-300: #F8B35A;
+  --secondary-colors-orange-400: #F6A53A;
+  --secondary-colors-orange-500: #F48E09;
+  --secondary-colors-orange-600: #DE8108;
+  --secondary-colors-orange-700: #AD6506;
+  --secondary-colors-orange-800: #864E05;
+  --secondary-colors-orange-900: #663C04;
+
+  /* Colors Red Orange */
+  --secondary-colors-red-orange-100: #FDEAD4;
+  --secondary-colors-red-orange-200: #FBCFAA;
+  --secondary-colors-red-orange-300: #F4AB7E;
+  --secondary-colors-red-orange-400: #EA895C;
+  --secondary-colors-red-orange-500: #DC562B;
+  --secondary-colors-red-orange-600: #BD3A1F;
+  --secondary-colors-red-orange-700: #9E2315;
+  --secondary-colors-red-orange-800: #7F110D;
+  --secondary-colors-red-orange-900: #69080C;
+
+  /* Colors Red */
+  --secondary-colors-red-100: #FFE4D6;
+  --secondary-colors-red-200: #FFC2AD;
+  --secondary-colors-red-300: #FF9983;
+  --secondary-colors-red-400: #FF7265;
+  --secondary-colors-red-600: #DB2434;
+  --secondary-colors-red-700: #B71934;
+  --secondary-colors-red-800: #930F32;
+  --secondary-colors-red-900: #7A0930;
+
+  /* Colors Red Violet */
+  --secondary-colors-red-violet-100: #F9DDED;
+  --secondary-colors-red-violet-200: #F4BDE2;
+  --secondary-colors-red-violet-300: #DE93CC;
+  --secondary-colors-red-violet-400: #BE6DB2;
+  --secondary-colors-red-violet-500: #93408E;
+  --secondary-colors-red-violet-600: #7C2E7E;
+  --secondary-colors-red-violet-700: #612069;
+  --secondary-colors-red-violet-800: #471455;
+  --secondary-colors-red-violet-900: #350C46;
+
+  /* Colors Violet */
+  --secondary-colors-violet-100: #F0D6FA;
+  --secondary-colors-violet-200: #DDAFF6;
+  --secondary-colors-violet-300: #BE82E6;
+  --secondary-colors-violet-400: #9B5ECE;
+  --secondary-colors-violet-500: #6F30AE;
+  --secondary-colors-violet-600: #562395;
+  --secondary-colors-violet-700: #40187D;
+  --secondary-colors-violet-800: #2D0F64;
+  --secondary-colors-violet-900: #1F0953;
+
+  /* Colors Blue Violet */
+  --secondary-colors-blue-violet-100: #DDD5FB;
+  --secondary-colors-blue-violet-200: #BBADF8;
+  --secondary-colors-blue-violet-300: #9280EA;
+  --secondary-colors-blue-violet-400: #705DD5;
+  --secondary-colors-blue-violet-500: #422EBA;
+  --secondary-colors-blue-violet-600: #31219F;
+  --secondary-colors-blue-violet-700: #231785;
+  --secondary-colors-blue-violet-800: #170E6B;
+  --secondary-colors-blue-violet-900: #0F0859;
+
+  /* Colors Blue */
+  --secondary-colors-blue-100: #C9FBF9;
+  --secondary-colors-blue-200: #94F5F7;
+  --secondary-colors-blue-300: #5DDCE9;
+  --secondary-colors-blue-400: #35B9D4;
+  --secondary-colors-blue-500: #008CB8;
+  --secondary-colors-blue-600: #006D9E;
+  --secondary-colors-blue-700: #005184;
+  --secondary-colors-blue-800: #003A6A;
+  --secondary-colors-blue-900: #002958;
+
+  /* Colors Blue Green */
+  --secondary-colors-blue-green-100: #EAF9F5;
+  --secondary-colors-blue-green-200: #CFF9ED;
+  --secondary-colors-blue-green-300: #B3E8D9;
+  --secondary-colors-blue-green-400: #3ED0A7;
+  --secondary-colors-blue-green-500: #00B884;
+  --secondary-colors-blue-green-600: #15A260;
+  --secondary-colors-blue-green-700: #107E4B;
+  --secondary-colors-blue-green-800: #0D623A;
+  --secondary-colors-blue-green-900: #0A4B2D;
+
+  /* Colors Green */
+  --secondary-colors-green-100: #E7FCDC;
+  --secondary-colors-green-200: #CBF9B9;
+  --secondary-colors-green-300: #A4ED93;
+  --secondary-colors-green-400: #7EDC73;
+  --secondary-colors-green-500: #4BC648;
+  --secondary-colors-green-600: #34AA3B;
+  --secondary-colors-green-700: #248E33;
+  --secondary-colors-green-800: #16722C;
+  --secondary-colors-green-900: #0D5F27;
+
+  /* Colors Yellow Green */
+  --secondary-colors-yellow-green-100: #F1FBD4;
+  --secondary-colors-yellow-green-200: #E0F8AA;
+  --secondary-colors-yellow-green-300: #C4EB7B;
+  --secondary-colors-yellow-green-400: #A5D758;
+  --secondary-colors-yellow-green-500: #7CBD28;
+  --secondary-colors-yellow-green-600: #62A21D;
+  --secondary-colors-yellow-green-700: #4B8814;
+  --secondary-colors-yellow-green-800: #366D0C;
+  --secondary-colors-yellow-green-900: #275A07;
+}
+
+/* TEXT STYLES */ 
+
+/* Headlines  */
+.headlines-h1 {
+  font-size: 28px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+.headlines-h2 {
+  font-size: 26px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+.headlines-h3 {
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+.headlines-h4 {
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+.headlines-h5 {
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+.headlines-h6 {
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+/* Text Semibold */
+.text-semibold-sb1 {
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+
+.text-semibold-sb2 {
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+.text-semibold-sb3 {
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+.text-semibold-sb4 {
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+.text-semibold-sb5 {
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+.text-semibold-sb6 {
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+.text-semibold-sb7 {
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+
+/* Text medium */
+.text-medium-m1 {
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.text-medium-m2 {
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.text-medium-m3 {
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+.text-medium-m4 {
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+
+.text-medium-m5 {
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+
+.text-medium-m6 {
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+
+.text-medium-m7 {
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+/* Text Regular */
+.text-regular-r1 {
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+.text-regular-r2 {
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.text-regular-r3 {
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.text-regular-r4 {
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.text-regular-r5 {
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+.text-regular-r6 {
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+.text-regular-r7 {
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+/* Buttons */
+.buttons-large-button {
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+
+.buttons-medium-button {
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+
+.buttons-small-button {
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
