@@ -14,7 +14,7 @@ export default function Layout(props: LayoutProps) {
             <Sidebar/>
             <div className={`
                 flex flex-col w-full p-7 
-                bg-gray-900
+                bg-white dark:bg-gray-800
             `}>
                 <Title 
                     titulo={props.titulo} 

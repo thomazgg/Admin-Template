@@ -1,5 +1,3 @@
-import Sidebar from "./Sidebar"
-
 interface TitleProps {
     titulo: string
     subtitulo: string
@@ -7,7 +5,9 @@ interface TitleProps {
 
 export default function Title(props: TitleProps) {
     return (
-        <div>
+        <div className={`
+            text-base-dark
+        `}>
             <h1 className={`
             `}>
                 {props.titulo}
