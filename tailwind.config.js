@@ -20,9 +20,9 @@ module.exports = {
         'gray-400': '#D1D5DC',
         'gray-500': '#BAC0CA',
         'gray-600': '#A4A7AC',
-        'gray-700': '#81858A',
-        'gray-800': '#4F4C4D',
-        'gray-900': '#3B3C3E',
+        'gray-700': '#81848A',
+        'gray-800': '#3B3C3E',
+        'gray-900': '#242932',
 
         // Brand Primary
         'brand-primary-100': '#F1E8FF',

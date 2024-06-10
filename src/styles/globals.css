@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 html,
 body {
@@ -35,8 +35,8 @@ a {
   --primary-colors-gray-500: #BAC0CA;
   --primary-colors-gray-600: #A4A7AC;
   --primary-colors-gray-700: #81858A;
-  --primary-colors-gray-800: #4F4C4D;
-  --primary-colors-gray-900: #3B3C3E;
+  --primary-colors-gray-800: #3B3C3E;
+  --primary-colors-gray-900: #242932;
 
   /* Colors Brand Primary  */
   --primary-colors-brand-primary-100: #F1E8FF;

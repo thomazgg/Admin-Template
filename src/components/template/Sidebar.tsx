@@ -14,7 +14,7 @@ export default function Sidebar() {
                 </div>
                 <div className="space-y-4">
                     <div>
-                        <h1 className={styles.title}>Menu</h1>
+                        <h1 className={`text-regular-r5 ${styles.title}`}>Menu</h1>
                     </div>
                     <div className="space-y-1">
                         <MenuItem url="/" icon={IconHome} text="Início" active />
@@ -26,7 +26,7 @@ export default function Sidebar() {
                 </div>
             </ul>
             <div className="mt-auto space-y-1">
-                <MenuItem url="/" icon={IconSettings1} text="Configurações" />
+                <MenuItem url="/settings" icon={IconSettings1} text="Configurações" />
                 <MenuItem url="/" icon={IconDotsGrid} text="E-Procurement" color="bg-brand-primary-500"/>
             </div>
         </aside>
