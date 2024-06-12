@@ -2,6 +2,7 @@
 
 .menuItemWrapper {
     position: relative; /* Necessário para posicionar o tooltip */
+    cursor: pointer;
 }
 
 .menuItem {
@@ -22,11 +23,8 @@
     background: rgba(255, 255, 255, 0.05); /* Fundo com opacidade ao hover */
 }
 
-.menuLink {
-    display: block; /* Ocupar todo o espaço disponível */
-    text-decoration: none; /* Remover sublinhado dos links */
-    color: inherit; /* Herda a cor do elemento pai */
-    width: 100%;
+.hoverRed:hover {
+    background: rgba(255, 0, 0, 0.1); /* Cor de fundo vermelha com opacidade ao hover */
 }
 
 .iconWrapper {

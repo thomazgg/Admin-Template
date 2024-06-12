@@ -11,13 +11,15 @@ interface LayoutProps {
 
 export default function Layout(props: LayoutProps) {
     return (
-        <div className={`flex h-screen w-screen`}>
+        <div className={`dark flex h-screen w-screen`}>
             <Sidebar/>
             <div className={`
                 flex flex-col w-full p-5
-                bg-white dark:bg-gray-800
+                bg-base-white dark:bg-gray-900
             `}>
-                <Logo></Logo>
+                <div className={`flex flex-col w-full pb-8`}>
+                    <Logo></Logo>
+                </div>
                 <Title 
                     titulo={props.titulo} 
                     subtitulo={props.subtitulo}>

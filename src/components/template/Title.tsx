@@ -6,7 +6,7 @@ interface TitleProps {
 export default function Title(props: TitleProps) {
     return (
         <div className={`
-            text-gray-800
+            text-gray-800 dark:text-white
         `}>
             <h1 className="headlines-h1">
                 {props.titulo}
