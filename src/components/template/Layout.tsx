@@ -1,17 +1,21 @@
+import { useData } from "@/data/hook/useAppData"
 import Logo from "../icons/logo"
 import Content from "./Content"
 import Sidebar from "./Sidebar"
 import Title from "./Title"
 
 interface LayoutProps {
-    titulo: string
-    subtitulo: string
+    title: string
+    subtitle: string
     children?: any
 }
 
 export default function Layout(props: LayoutProps) {
+
+    const { theme, changeTheme } = useData();
+
     return (
-        <div className={`dark flex h-screen w-screen`}>
+        <div className={`${theme} flex h-screen w-screen`}>
             <Sidebar/>
             <div className={`
                 flex flex-col w-full p-5
@@ -21,8 +25,8 @@ export default function Layout(props: LayoutProps) {
                     <Logo></Logo>
                 </div>
                 <Title 
-                    titulo={props.titulo} 
-                    subtitulo={props.subtitulo}>
+                    title={props.title} 
+                    subtitle={props.subtitle}>
                 </Title>
                 <Content>
                     {props.children}

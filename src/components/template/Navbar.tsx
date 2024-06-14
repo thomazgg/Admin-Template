@@ -1,14 +1,14 @@
 import Title from "./Title"
 
 interface NavbarProps {
-    titulo: string
-    subtitulo: string
+    titutitilelo: string
+    subtitle: string
 }
 
 export default function Navbar(props: NavbarProps) {
     return (
         <div>
-            <Title titulo={props.titulo} subtitulo={props.subtitulo}/>
+            <Title title={props.subtitle} subtitle={props.subtitle}/>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 interface TitleProps {
-    titulo: string
-    subtitulo: string
+    title: string
+    subtitle: string
 }
 
 export default function Title(props: TitleProps) {
@@ -9,10 +9,10 @@ export default function Title(props: TitleProps) {
             text-gray-800 dark:text-white
         `}>
             <h1 className="headlines-h1">
-                {props.titulo}
+                {props.title}
             </h1>
             <h2 className="text-regular-r5">
-                {props.subtitulo}
+                {props.subtitle}
             </h2>
         </div>
     )

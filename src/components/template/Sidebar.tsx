@@ -22,7 +22,7 @@ export default function Sidebar() {
                         <MenuItem url="/" icon={<IconShoppingBag2 />} text="Fluxo de Compra" />
                         <MenuItem url="/" icon={<IconTruck />} text="Fornecedores" />
                         <MenuItem url="/" icon={<IconFIle4 />} text="Contratos" />
-                        <MenuItem url="/" icon={<IconArchive />} text="Meus Produtos" />
+                        <MenuItem url="/notification" icon={<IconArchive />} text="Meus Produtos" />
                     </div>
                 </div>
             </ul>
