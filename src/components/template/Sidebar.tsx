@@ -28,9 +28,7 @@ export default function Sidebar() {
             </ul>
             <div className="mt-auto space-y-1">
                 <MenuItem url="/settings" icon={<IconSettings1 />} text="Configurações" />
-                <MenuItem icon={<IconLogout />} text="Sair"
-                    onClick={() => console.log("logout")}
-                />
+                <MenuItem url="/authentication" icon={<IconLogout />} text="Sair"/>
             </div>
         </aside>
     );
