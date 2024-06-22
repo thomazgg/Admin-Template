@@ -1,7 +1,7 @@
 import Layout from "@/components/template/Layout";
 import { useData } from "@/data/hook/useAppData";
 
-export default function Notificacoes() {
+export default function Notifications() {
   const { changeTheme } = useData();
 
   return (

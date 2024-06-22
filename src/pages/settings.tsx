@@ -1,7 +1,7 @@
 import Layout from "@/components/template/Layout";
 import styles from '@/styles/Pages.module.css';
 
-export default function Home() {
+export default function Settings() {
   return (
     <Layout
         title="Configurações"

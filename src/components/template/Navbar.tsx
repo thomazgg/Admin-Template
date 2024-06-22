@@ -1,3 +1,4 @@
+import AvatarUser from "./AvatarUser"
 import Title from "./Title"
 
 interface NavbarProps {

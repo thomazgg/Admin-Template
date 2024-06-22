@@ -2,8 +2,12 @@ import React from 'react';
 import MenuItem from './MenuItem';
 import { IconArchive, IconFIle4, IconHome, IconLayoutLeft, IconLogout, IconSearch, IconSettings1, IconShoppingBag2, IconTruck } from '../icons';
 import styles from '@/styles/Sidebar.module.css';
+import useAuth from '@/data/hook/useAuth';
 
 export default function Sidebar() {
+
+    const { logout } = useAuth()
+
     return (
         <aside className="p-5 bg-brand-primary-900 flex flex-col h-screen">
             <ul className="space-y-8 flex-grow">
@@ -28,7 +32,7 @@ export default function Sidebar() {
             </ul>
             <div className="mt-auto space-y-1">
                 <MenuItem url="/settings" icon={<IconSettings1 />} text="Configurações" />
-                <MenuItem url="/authentication" icon={<IconLogout />} text="Sair"/>
+                <MenuItem onClick={logout} icon={<IconLogout />} text="Sair"/>
             </div>
         </aside>
     );
